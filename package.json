@@ -1,0 +1,22 @@
+{
+  "name": "es6learning",
+  "version": "1.0.0",
+  "description": "es6 learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanZhang001/es6learning.git"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "alanzhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanZhang001/es6learning/issues"
+  },
+  "homepage": "https://github.com/AlanZhang001/es6learning#readme"
+}
