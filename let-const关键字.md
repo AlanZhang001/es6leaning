@@ -48,3 +48,6 @@
 	}());
 	// Uncaught TypeError: f is not a function
 	```
+
+3. 在非块级作用域(如全局作用域)中定义块级作用域时，}后需要使用分号“;”，否则会报错
+![](assert/1.png)
