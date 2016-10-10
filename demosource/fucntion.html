@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>箭头函数</title>
+    </head>
+    <body>
+        箭头函数:<br/>
+        （1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。<br/>
+        （2）不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。<br/>
+        （3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用Rest参数代替。<br/>
+        （4）不可以使用yield命令，因此箭头函数不能用作Generator函数。
+    </body>
+    <script type="text/javascript">
+        var str = "world";
+        var hello = {
+            str : "hello",
+            //此处相当于 hello.that = this;因此this是指向window
+            that: this,
+            printES6: ()=>{
+                console.log(this.str);
+            },
+            printES5: function(){
+                console.log(this.str);
+            },
+            print:(...values) =>{
+                console.log(values);
+            },
+            printThis: function(){
+                console.log(this.that);
+            }
+        };
+        hello.printES6();// window.str : world
+        hello.printES5();// hello.str: hello
+        hello.print(1,2,34,4,5) //[1, 2, 34, 4, 5]
+        hello.printThis();// window
+    </script>
+</html>
