@@ -16,4 +16,13 @@
 2. **[变量的解构赋值](%E5%8F%98%E9%87%8F%E7%9A%84%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC.md)**
 3. **[数组的扩展](%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95.md)**
 4. **[函数的扩展](%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A9%E5%B1%95.md)**
-5. **[Iterator和forof循环](Iterator%E5%92%8Cforof%E5%BE%AA%E7%8E%AF.md)**
+5. **[对象的扩展](%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95.md)**
+6. **[Iterator和forof循环](Iterator%E5%92%8Cforof%E5%BE%AA%E7%8E%AF.md)**
+7. **[Set和Map数据结构](Set%E5%92%8CMap%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)**
+
+## TODO：
+前期未理解，需要后期花时间去学习
+1. 函数的扩展
+    + 尾递归优化
+    + 递归函数的改写
+
