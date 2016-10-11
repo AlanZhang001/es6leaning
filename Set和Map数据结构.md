@@ -2,6 +2,7 @@
 
 ## 1. Set
 - set内部判断2个值是否相等是使用===来判断的，但是NaN比较特殊，在set内部，认为NaN是等于自身的。
+
     ```
     var set = new Set([NaN,NaN]);
     [...set]
