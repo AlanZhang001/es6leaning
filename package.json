@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AlanZhang001/es6learning/issues"
   },
-  "homepage": "https://github.com/AlanZhang001/es6learning#readme"
+  "homepage": "https://github.com/AlanZhang001/es6learning#readme",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>iterator and for of </title>
+    </head>
+    <body>
+        <div id="id1"> jQuery3.0 集合将是一个可迭代对象</div>
+        <div id="id2"></div>
+    </body>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript">
+        var list_ = $("div");
+
+        //jQuery3.0 集合将是一个可迭代对象
+        for(item of list_){
+            console.log(item);
+        }
+    </script>
+</html>

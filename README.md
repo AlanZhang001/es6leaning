@@ -2,7 +2,6 @@
 学习es6的实例
 
 ## 学习资料
-- [ES6新特性概览](http://www.cnblogs.com/Wayou/p/es6_new_features.html)
 - [阮一峰 ECMAScript 6入门](http://es6.ruanyifeng.com/)
 
 ## es6 Node相关
@@ -23,6 +22,6 @@
 ## TODO：
 前期未理解，需要后期花时间去学习
 1. 函数的扩展
-    + 尾递归优化
-    + 递归函数的改写
+    - 尾递归优化
+    - 递归函数的改写
 
