@@ -18,6 +18,8 @@
 5. **[对象的扩展](%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95.md)**
 6. **[Iterator和forof循环](Iterator%E5%92%8Cforof%E5%BE%AA%E7%8E%AF.md)**
 7. **[Set和Map数据结构](Set%E5%92%8CMap%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)**
+8. **[Promise 及异步编程的学习](Promise%20%E5%8F%8A%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E5%AD%A6%E4%B9%A0.md)**
+9. **[Generator 函数](Generator%E5%87%BD%E6%95%B0.md)**
 
 ## TODO：
 前期未理解，需要后期花时间去学习
