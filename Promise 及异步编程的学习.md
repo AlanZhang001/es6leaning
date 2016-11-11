@@ -3,7 +3,8 @@
 ## 学习资料
 
 - 【已读】[Promise迷你书](http://liubin.org/promises-book/)
-- [Promise/A+ 规范](https://promisesaplus.com/)
+- [Promise/A+ 规范-英](https://promisesaplus.com/)
+- [Promise/A+ 规范-中](https://leohxj.gitbooks.io/front-end-database/content/javascript-asynchronous/promise-standard.html)
 - [JavaScript Promise启示录 ](http://www.alloyteam.com/2014/05/javascript-promise-mode/)
 - [Promise的实现](https://github.com/fsjohnhuang/iPromise)
 - [深入理解 Promise 五部曲](https://segmentfault.com/a/1190000000586666)
