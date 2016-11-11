@@ -2,7 +2,7 @@
 
 ## 学习资料
 
-- [Promise迷你书](http://liubin.org/promises-book/)
+- 【已读】[Promise迷你书](http://liubin.org/promises-book/)
 - [Promise/A+ 规范](https://promisesaplus.com/)
 - [JavaScript Promise启示录 ](http://www.alloyteam.com/2014/05/javascript-promise-mode/)
 - [Promise的实现](https://github.com/fsjohnhuang/iPromise)
@@ -10,8 +10,6 @@
 - [剖析Promise内部结构](https://github.com/xieranmaya/blog/issues/3)
 - [深入理解 Promise 五部曲](https://segmentfault.com/a/1190000000586666)
 
-
-当前进度:http://liubin.org/promises-book/#race-delay-timeout
 
 ## 学习笔记
 
@@ -273,4 +271,25 @@
     ```
     参考至：[https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Deferred](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Promise.jsm/Deferred)
 
+11. Promise.prototype.done
+    - Promise.prototype.done并不在ES6的规范中，由第三方来实现
+    - Promise.prototype.done在执行链的最后执行
+    - 在使用Promise时，需要注意异常的处理，由于catch可以捕获产生的异常，如果在catch中未做处理，则调试代码时不易定位问题。
+    - 在try catch中使用setimeout抛出的异常不会被catch到，而是抛给外层。
+    - 一个现实：
+    ```
+    if (typeof Promise.prototype.done === "undefined") {
+        Promise.prototype.done = function(onFulfilled,onRejected){
+            this.then(onFulfilled,onRejected).catch(function(error){
 
+                // 此处应抛出异常到外部，显示提供给外部，否则此处捕获之后外界无法感知，增加定位问题的成本
+                // 除非明确知道要做什么，否则扩展的功能不应该处理异常的情况
+                setTimeout(function () {
+                    throw error;
+                }, 0);
+            });
+        };
+    }
+    ```
+
+12. 
