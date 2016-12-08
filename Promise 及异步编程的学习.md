@@ -233,7 +233,8 @@
     }).catch(console.error.bind(console));
     ```
 
- 封装后：
+   封装后：
+
     ```
     function Deferred() {
         this.promise = new Promise(function (resolve, reject) {
@@ -293,4 +294,23 @@
     }
     ```
 
-12. 
+12. 箭头函数问题
+如果该在promise.then 方法中传入的是一个带有解构参数的箭头函数时，解构参数外必须要有一个括号包裹，否则会报错。
+    ```
+    function fetchData(){
+        return new Promise((resolve,reject) => {
+            resolve(["a","b"]);
+        });
+    }
+
+    fetchData().then([value1,value2] => {
+        alert(value1);
+    });
+    // syntaxError
+
+    // 正确写法
+    fetchData().then(([value1,value2]) => {
+        alert(value1);
+    });
+
+    ```
