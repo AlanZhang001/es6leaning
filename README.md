@@ -5,7 +5,7 @@
 - [阮一峰 ECMAScript 6入门](http://es6.ruanyifeng.com/)
 - [Promise迷你书](http://liubin.org/promises-book/)
 
-当前进度：<http://es6.ruanyifeng.com/#docs/symbol>
+当前进度：<http://es6.ruanyifeng.com/#docs/class>
 
 ## es6 Node相关
 1. 检测Node版本对ES6的支持：`node --v8-options | grep harmony`
@@ -23,6 +23,8 @@
 7. **[Set和Map数据结构](Set%E5%92%8CMap%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.md)**
 8. **[Promise 及异步编程的学习](Promise%20%E5%8F%8A%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E7%9A%84%E5%AD%A6%E4%B9%A0.md)**
 9. **[Generator 函数](Generator%E5%87%BD%E6%95%B0.md)**
+10. **[Symbol](Symbol.md)**
+11. **[Class](Class.md)**
 
 ## TODO：
 前期未理解，需要后期花时间去学习
