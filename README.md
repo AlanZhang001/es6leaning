@@ -5,7 +5,7 @@
 - [阮一峰 ECMAScript 6入门](http://es6.ruanyifeng.com/)
 - [Promise迷你书](http://liubin.org/promises-book/)
 
-当前进度：<http://es6.ruanyifeng.com/#docs/class>
+当前进度：<http://es6.ruanyifeng.com/#docs/generator#yield语句>
 
 ## es6 Node相关
 1. 检测Node版本对ES6的支持：`node --v8-options | grep harmony`
