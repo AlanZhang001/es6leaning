@@ -157,3 +157,19 @@ function* gen(){
 
 gen().next() // { value:"a", done:false }
 ```
+
+###### Generator函数的this
+- Generator函数总是返回一个遍历器，ES6规定这个遍历器是Generator函数的实例，也继承了Generator函数的prototype对象上的方法
+```
+function* g() {}
+
+g.prototype.hello = function () {
+  return 'hi!';
+};
+let obj = g();
+obj instanceof g // true
+obj.hello() // 'hi!'
+```
+- Generator函数不能与new 一同使用
+
+
