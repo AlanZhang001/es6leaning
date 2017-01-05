@@ -6,4 +6,3 @@
     - 类数组，nodelist，arguments等
 
 2. 
- 

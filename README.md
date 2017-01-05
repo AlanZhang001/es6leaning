@@ -5,7 +5,7 @@
 - [阮一峰 ECMAScript 6入门](http://es6.ruanyifeng.com/)
 - [Promise迷你书](http://liubin.org/promises-book/)
 
-当前进度：<Iterator%E5%92%8Cforof%E5%BE%AA%E7%8E%AF.md>
+当前进度：[Iterator和forof循环](Iterator%E5%92%8Cforof%E5%BE%AA%E7%8E%AF.md)
 
 ## es6 Node相关
 1. 检测Node版本对ES6的支持：`node --v8-options | grep harmony`
