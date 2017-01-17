@@ -25,6 +25,7 @@
 9. **[Generator 函数](Generator%E5%87%BD%E6%95%B0.md)**
 10. **[Symbol](Symbol.md)**
 11. **[Class](Class.md)**
+12. **[Proxy](Proxy.md)**
 
 ## TODO：
 前期未理解，需要后期花时间去学习
