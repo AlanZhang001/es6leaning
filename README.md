@@ -5,7 +5,7 @@
 - [阮一峰 ECMAScript 6入门](http://es6.ruanyifeng.com/)
 - [Promise迷你书](http://liubin.org/promises-book/)
 
-当前进度：[Proxy](http://es6.ruanyifeng.com/#docs/proxy)
+当前进度：[module](http://es6.ruanyifeng.com/#docs/module)
 
 ## es6 Node相关
 1. 检测Node版本对ES6的支持：`node --v8-options | grep harmony`
@@ -26,6 +26,7 @@
 10. **[Symbol](Symbol.md)**
 11. **[Class](Class.md)**
 12. **[Proxy](Proxy.md)**
+13. **[module](module.md)**
 
 ## TODO：
 前期未理解，需要后期花时间去学习
@@ -37,3 +38,5 @@
     - Weakset的用处是什么
     - WeakMap的用处是什么
 
+## 说明
+- 需要做babel处理的代码在`/demosource/babelCode`目录中
