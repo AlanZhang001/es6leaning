@@ -5,7 +5,7 @@
 - [阮一峰 ECMAScript 6入门](http://es6.ruanyifeng.com/)
 - [Promise迷你书](http://liubin.org/promises-book/)
 
-当前进度：[module](http://es6.ruanyifeng.com/#docs/module)
+当前进度：[module](http://es6.ruanyifeng.com/#docs/module#ES6模块加载的实质)
 
 ## es6 Node相关
 1. 检测Node版本对ES6的支持：`node --v8-options | grep harmony`

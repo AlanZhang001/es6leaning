@@ -59,12 +59,14 @@
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
-	alert('1+2=' + (0, _calculate.sum)(1, 2));
-	
-	// 加载整个模块
 	// 加载单个方法
+	alert('1+2=' + (0, _calculate.sum)(1, 2));
+	// 加载整个模块
+	
 	
 	console.log(cal);
+	
+	alert('the defautl function is ' + cal.default.toString());
 
 /***/ },
 /* 2 */
@@ -75,6 +77,10 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	/**
+	 * 模块的基本用法
+	 */
+	
 	function sum(a, b) {
 	    return a + b;
 	}
@@ -83,8 +89,13 @@
 	    return a - b;
 	}
 	
+	// 整体输出
 	exports.sum = sum;
 	exports.sub = sub;
+	
+	// 默认输出
+	
+	exports.default = sum;
 
 /***/ }
 /******/ ]);

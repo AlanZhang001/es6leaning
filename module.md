@@ -24,6 +24,7 @@
 2. export
 
 	- 错误的实例
+	
 	    ```
 	    // 报错
 	    export 1;
@@ -36,7 +37,9 @@
 	    function f() {}
 	    export f;
 	    ```
+	    
 	    正确的方式：
+
 	    ```
 	    // 写法一
 	    export var m = 1;
@@ -59,6 +62,7 @@
 
 3. import 
 	- import 具有提升效果，会提升到整个模块的头部，首先执行；import命令是编译阶段执行的，在代码运行之前
+	
 	    ```
 	    // 不报错
 	    foo();
@@ -88,3 +92,20 @@
 	    ```
 
 4. export default
+与直接export 不同，`export default`的方式可以采用如下方式：
+```
+// 正确
+export default 42;
+
+// 正确
+function foo() {
+  console.log('foo');
+}
+export default foo;
+
+// 报错
+export 42;
+
+// 错误
+export default var a = 1;
+```
