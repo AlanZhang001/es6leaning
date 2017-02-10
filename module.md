@@ -93,19 +93,19 @@
 
 4. export default
 与直接export 不同，`export default`的方式可以采用如下方式：
-```
-// 正确
-export default 42;
+	```
+	// 正确
+	export default 42;
 
-// 正确
-function foo() {
-  console.log('foo');
-}
-export default foo;
+	// 正确
+	function foo() {
+	  console.log('foo');
+	}
+	export default foo;
 
-// 报错
-export 42;
+	// 报错
+	export 42;
 
-// 错误
-export default var a = 1;
-```
+	// 错误
+	export default var a = 1;
+	```
