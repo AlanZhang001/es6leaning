@@ -62,7 +62,7 @@ gulp.task('webpackDev', function() {
 
 //监控文件变化
 gulp.task('watch', function() {
-    gulp.watch(['./web/scripts/source/**/*Main.js', './web/scripts/source/**/*.html'], ['webpackDev']);
+    gulp.watch(['./web/scripts/source/**/*Main.js'], ['webpackDev']);
 });
 
 gulp.task('default', function() {

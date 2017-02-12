@@ -5,7 +5,7 @@
 - [阮一峰 ECMAScript 6入门](http://es6.ruanyifeng.com/)
 - [Promise迷你书](http://liubin.org/promises-book/)
 
-当前进度：[module](http://es6.ruanyifeng.com/#docs/module#ES6模块加载的实质)
+当前进度：[async](http://es6.ruanyifeng.com/#docs/async)
 
 ## es6 Node相关
 1. 检测Node版本对ES6的支持：`node --v8-options | grep harmony`
@@ -25,7 +25,7 @@
 9. **[Generator 函数](Generator%E5%87%BD%E6%95%B0.md)**
 10. **[Symbol](Symbol.md)**
 11. **[Class](Class.md)**
-12. **[Proxy](Proxy.md)**
+12. **[async](async.md)**
 13. **[module](module.md)**
 
 ## TODO：
