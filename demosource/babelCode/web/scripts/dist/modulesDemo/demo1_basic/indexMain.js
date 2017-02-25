@@ -44,16 +44,17 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	module.exports = __webpack_require__(2);
 
 
 /***/ },
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _calculate = __webpack_require__(2);
+	var _calculate = __webpack_require__(3);
 	
 	var cal = _interopRequireWildcard(_calculate);
 	
@@ -69,7 +70,7 @@
 	alert('the defautl function is ' + cal.default.toString());
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports) {
 
 	"use strict";

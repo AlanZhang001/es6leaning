@@ -10,6 +10,9 @@ function sub(a,b) {
     return a - b;
 }
 
+var test = Symbol('1234534');
+alert(test);
+
 // 整体输出
 export {
     sum,
