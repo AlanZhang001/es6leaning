@@ -45,17 +45,17 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(10);
+	module.exports = __webpack_require__(14);
 
 
 /***/ },
 
-/***/ 10:
+/***/ 14:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _lib_module = __webpack_require__(11);
+	var _lib_module = __webpack_require__(15);
 	
 	console.log(_lib_module.counter); // 3
 	// main.js
@@ -64,7 +64,7 @@
 
 /***/ },
 
-/***/ 11:
+/***/ 15:
 /***/ function(module, exports) {
 
 	"use strict";

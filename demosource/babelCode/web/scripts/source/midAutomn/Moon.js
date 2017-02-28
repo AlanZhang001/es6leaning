@@ -4,10 +4,11 @@
  */
 class Moon{
     // 初始化Moon所在画布
-    constructor(ctx,width,height){
+    constructor(ctx,width,height,canvasWidth){
         this.ctx = ctx;
         this.width = width;
         this.height = height;
+        this.canvasWidth = canvasWidth;
     }
 
     draw(){
@@ -24,7 +25,7 @@ class Moon{
             y:200,
             r:800
         };
-        let gradient = this.createRadialGradient(startCircule.x, startCircule.y, startCircule.r,
+        let gradient = ctx.createRadialGradient(startCircule.x, startCircule.y, startCircule.r,
             stopCircule.x, stopCircule.y, stopCircule.r);
 
         //径向渐变,为开始圆和结束圆之间添加颜色渐变
@@ -36,8 +37,12 @@ class Moon{
 
         ctx.save();
         ctx.fillStyle = gradient;
-        ctx.fillRect(0,0,this.height,this.width);
+        ctx.fillRect(0,0,this.width,this.height);
         ctx.restore();
+    }
+
+    move(){
+
     }
 }
 

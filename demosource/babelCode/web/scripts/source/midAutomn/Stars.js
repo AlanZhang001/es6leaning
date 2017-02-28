@@ -10,7 +10,7 @@ class Star{
      * @param  {[type]} amount [需要产生的星星的]
      * @return {[type]}        [description]
      */
-    contructor(ctx,height,width,amount) {
+    constructor(ctx,height,width,amount) {
         this.ctx = ctx;
         this.height = height;
         this.width= height;
@@ -23,16 +23,15 @@ class Star{
      * @return {[Object]}      [包含星星的属性]
      */
     generateStars(amount){
-        let stars = new Array(amount);
-        stars.forEach(item =>{
-            item = {
+        let stars = [];
+        while(amount--){
+            stars.push({
                 x: this.width * Math.random(),
                 y: this.height * Math.random(),
-                r: Math.random() + 0.15
-            };
-        });
-
-        return star;
+                r: Math.random() + 0.55
+            });
+        }
+        return stars;
     }
 
     /**
@@ -55,11 +54,11 @@ class Star{
      * [blink 动态改变星星的半径，制造闪烁效果]
      * @return {[type]} [description]
      */
-    blink(){
-        this.stars.forEach(item=>{
-            let offset = Math.random() > 0.5 ? 0.2: -0.2;
-            star.r = Math.abs(star.r + offset);
-            star.r > 1 && (star.r -= offset);
+    blink() {
+        this.stars.forEach(item => {
+            let offset = Math.random() > 0.5 ? 0.4 : -0.4;
+            item.r = Math.abs(item.r + offset);
+            item.r > 1.5 && (item.r -= offset);
         });
     }
 }

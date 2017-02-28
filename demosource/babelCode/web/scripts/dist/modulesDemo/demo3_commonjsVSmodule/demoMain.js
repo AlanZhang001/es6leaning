@@ -40,25 +40,22 @@
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(6);
+	module.exports = __webpack_require__(10);
 
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */
+
+/***/ 10:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _browser = __webpack_require__(7);
+	var _browser = __webpack_require__(11);
 	
 	var _browser2 = _interopRequireDefault(_browser);
 	
@@ -67,7 +64,8 @@
 	alert('Is this a window browser？' + _browser2.default.isWindows());
 
 /***/ },
-/* 7 */
+
+/***/ 11:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -161,5 +159,6 @@
 	exports.default = browser;
 
 /***/ }
-/******/ ]);
+
+/******/ });
 //# sourceMappingURL=demoMain.js.map

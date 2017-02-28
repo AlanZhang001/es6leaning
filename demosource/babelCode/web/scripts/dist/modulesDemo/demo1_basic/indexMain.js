@@ -44,17 +44,21 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(2);
+	module.exports = __webpack_require__(6);
 
 
 /***/ },
 /* 1 */,
-/* 2 */
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _calculate = __webpack_require__(3);
+	var _calculate = __webpack_require__(7);
 	
 	var cal = _interopRequireWildcard(_calculate);
 	
@@ -70,10 +74,10 @@
 	alert('the defautl function is ' + cal.default.toString());
 
 /***/ },
-/* 3 */
+/* 7 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -89,6 +93,9 @@
 	function sub(a, b) {
 	    return a - b;
 	}
+	
+	var test = Symbol('1234534');
+	alert(test);
 	
 	// 整体输出
 	exports.sum = sum;

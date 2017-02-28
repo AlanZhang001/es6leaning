@@ -44,16 +44,20 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(4);
+	module.exports = __webpack_require__(8);
 
 
 /***/ },
 /* 1 */,
 /* 2 */,
-/* 3 */
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -70,6 +74,9 @@
 	    return a - b;
 	}
 	
+	var test = Symbol('1234534');
+	alert(test);
+	
 	// 整体输出
 	exports.sum = sum;
 	exports.sub = sub;
@@ -79,18 +86,18 @@
 	exports.default = sum;
 
 /***/ },
-/* 4 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _calculatePlus = __webpack_require__(5);
+	var _calculatePlus = __webpack_require__(9);
 	
 	alert('1+2=' + (0, _calculatePlus.sum)(1, 2));
 	alert('1/2=' + (0, _calculatePlus.division)(1, 2));
 
 /***/ },
-/* 5 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -99,7 +106,7 @@
 	    value: true
 	});
 	
-	var _calculate = __webpack_require__(3);
+	var _calculate = __webpack_require__(7);
 	
 	Object.keys(_calculate).forEach(function (key) {
 	    if (key === "default" || key === "__esModule") return;
