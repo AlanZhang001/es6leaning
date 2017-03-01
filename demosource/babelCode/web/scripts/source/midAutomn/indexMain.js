@@ -28,7 +28,7 @@ var FESTIVAL = {
         this.stars = new Stars(this.ctx,this.size.width,this.size.height,this.conut.stars);
         this.moon = new Moon(this.ctx,this.size.width,this.size.height,this.size.width);
         this.meteors = [];
-        this.meteorGenerator(this.ctx);
+        this.meteorGenerator();
     },
 
     //流星生成函数
@@ -39,7 +39,7 @@ var FESTIVAL = {
 
         //每隔随机时间，生成新流星
         setTimeout(()=> {
-            this.meteorGenerator(this.ctx);
+            this.meteorGenerator();
         }, Math.random() * 2000);
     },
 
