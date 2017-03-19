@@ -28,6 +28,9 @@
 12. **[async](async.md)**
 13. **[module](module.md)**
 
+## 一些demo
+- (中秋节的星空)[https://alanzhang001.github.io/es6learning/demosource/babelCode/web/site/canvasMoon/index.html]
+
 ## TODO：
 前期未理解，需要后期花时间去学习
 
