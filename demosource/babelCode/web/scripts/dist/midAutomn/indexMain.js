@@ -93,7 +93,7 @@
 	        this.stars = new _Stars2.default(this.ctx, this.size.width, this.size.height, this.conut.stars);
 	        this.moon = new _Moon2.default(this.ctx, this.size.width, this.size.height, this.size.width);
 	        this.meteors = [];
-	        this.meteorGenerator(this.ctx);
+	        this.meteorGenerator();
 	    },
 	
 	    //流星生成函数
@@ -106,7 +106,7 @@
 	
 	        //每隔随机时间，生成新流星
 	        setTimeout(function () {
-	            _this.meteorGenerator(_this.ctx);
+	            _this.meteorGenerator();
 	        }, Math.random() * 2000);
 	    },
 	

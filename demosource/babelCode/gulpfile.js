@@ -36,11 +36,13 @@ var devConfig = {
             loader: 'style-loade!css-loader'
         }]
     },
+    plugins:[
+        // new webpack.optimize.UglifyJsPlugin('*.js')
+    ],
     externals: {
         jquery: 'jQuery'
     },
     watch: false,
-    plugins: [],
     devtool: 'source-map',
 };
 
