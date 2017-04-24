@@ -1,3 +1,6 @@
 .idea
 node_modules
 tempfiles
+demosource/babelCode/web/site/test
+demosource/babelCode/web/scripts/dist/test
+demosource/babelCode/web/scripts/source/test
