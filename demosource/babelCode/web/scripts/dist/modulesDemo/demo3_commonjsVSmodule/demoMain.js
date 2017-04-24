@@ -45,17 +45,17 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(10);
+	module.exports = __webpack_require__(11);
 
 
 /***/ },
 
-/***/ 10:
+/***/ 11:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _browser = __webpack_require__(11);
+	var _browser = __webpack_require__(12);
 	
 	var _browser2 = _interopRequireDefault(_browser);
 	
@@ -65,7 +65,7 @@
 
 /***/ },
 
-/***/ 11:
+/***/ 12:
 /***/ function(module, exports) {
 
 	'use strict';

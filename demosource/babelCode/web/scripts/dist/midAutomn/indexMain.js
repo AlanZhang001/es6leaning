@@ -44,25 +44,26 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(2);
+	module.exports = __webpack_require__(3);
 
 
 /***/ },
 /* 1 */,
-/* 2 */
+/* 2 */,
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _Stars = __webpack_require__(3);
+	var _Stars = __webpack_require__(4);
 	
 	var _Stars2 = _interopRequireDefault(_Stars);
 	
-	var _Moon = __webpack_require__(4);
+	var _Moon = __webpack_require__(5);
 	
 	var _Moon2 = _interopRequireDefault(_Moon);
 	
-	var _Meteor = __webpack_require__(5);
+	var _Meteor = __webpack_require__(6);
 	
 	var _Meteor2 = _interopRequireDefault(_Meteor);
 	
@@ -135,7 +136,7 @@
 	FESTIVAL.initial(document.getElementById('canvas'));
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -231,7 +232,7 @@
 	exports.default = Star;
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -299,7 +300,7 @@
 	exports.default = Moon;
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';

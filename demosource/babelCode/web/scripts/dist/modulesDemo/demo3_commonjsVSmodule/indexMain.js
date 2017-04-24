@@ -45,18 +45,18 @@
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(12);
+	module.exports = __webpack_require__(13);
 
 
 /***/ },
 
-/***/ 12:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	// main.js
-	var mod = __webpack_require__(13);
+	var mod = __webpack_require__(14);
 	
 	console.log(mod.counter); // 3
 	mod.incCounter();
@@ -64,7 +64,7 @@
 
 /***/ },
 
-/***/ 13:
+/***/ 14:
 /***/ function(module, exports) {
 
 	"use strict";

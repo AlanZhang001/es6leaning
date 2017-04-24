@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(8);
+	module.exports = __webpack_require__(9);
 
 
 /***/ },
@@ -54,7 +54,8 @@
 /* 4 */,
 /* 5 */,
 /* 6 */,
-/* 7 */
+/* 7 */,
+/* 8 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -86,18 +87,18 @@
 	exports.default = sum;
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _calculatePlus = __webpack_require__(9);
+	var _calculatePlus = __webpack_require__(10);
 	
 	alert('1+2=' + (0, _calculatePlus.sum)(1, 2));
 	alert('1/2=' + (0, _calculatePlus.division)(1, 2));
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -106,7 +107,7 @@
 	    value: true
 	});
 	
-	var _calculate = __webpack_require__(7);
+	var _calculate = __webpack_require__(8);
 	
 	Object.keys(_calculate).forEach(function (key) {
 	    if (key === "default" || key === "__esModule") return;
