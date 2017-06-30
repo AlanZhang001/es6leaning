@@ -46,3 +46,11 @@ let person = new class {
 
 person.sayName(); // "张三"
 ```
+
+##### 5. class内部不能定义属性
+
+```
+class Person{
+    let a = 1;//报错
+}
+```
