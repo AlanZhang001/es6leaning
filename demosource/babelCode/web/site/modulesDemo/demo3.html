@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
-        <title>commonjsVSmodule</title>
+        <title>浏览器直接加载es模块</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
         <meta name="format-detection" content="telephone=no"/>
@@ -10,6 +10,13 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
     <body>
+        浏览器通过type="module" 直接加载es模块,chrome从66版本开始支持
     </body>
-    <script type="text/javascript" src="../../scripts/dist/modulesDemo/demo3_commonjsVSmodule/demoMain.js"></script>
+    <!-- 下载这两种方式都可以 -->
+    <script type="module" src="/scripts/source/lib/browser.js"></script>
+
+    <!-- <script type="module">
+        import browser from '/scripts/source/lib/browser.js';
+        alert('当前是pc浏览器：' + !browser.isMobileUA());
+    </script> -->
 </html>

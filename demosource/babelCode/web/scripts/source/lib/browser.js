@@ -79,4 +79,6 @@ var browser = {
     }
 };
 
+console.log('this is browser.js');
+
 export default browser;

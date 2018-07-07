@@ -1,6 +1,24 @@
 # module 笔记
 
-截止至2017年2月，尚无浏览器支持import，export语法，需要通过babel-loader来转换处理。
+##### 0. 浏览器对es 模块的支持
+```
+方式1：
+<script type="module" src="/scripts/source/lib/browser.js"></script>
+方式2：
+<script type="module">
+    import browser from '/scripts/source/lib/browser.js';
+    alert('当前是pc浏览器：' + !browser.isMobileUA());
+</script>
+```
+chrome 66浏览器支持import，export语法 
+
+注意点：
+
+- 代码是在模块作用域之中运行，而不是在全局作用域运行。模块内部的顶层变量，外部不可见。
+- 模块脚本自动采用严格模式，不管有没有声明use strict。
+- 模块之中，可以使用import命令加载其他模块（.js后缀不可省略，需要提供绝对 URL 或相对 URL），也可以使用export命令输出对外接口。
+- 模块之中，顶层的this关键字返回undefined，而不是指向window。也就是说，在模块顶层使用this关键字，是无意义的。
+- 同一个模块如果加载多次，将只执行一次。
 
 ##### 1. 严格模式
 - ES6 的模块自动采用严格模式，不管是否有加上`use strict`;
@@ -110,7 +128,7 @@ export default var a = 1;
 ```
 
 ##### 5. ES6 模块加载的机制，与 CommonJS 模块完全不同 [见demosource\babelCode\web\scripts\source\modulesDemo\demo3_commonjsVSmodule]
-- ommonJS模块输出的对象上的基本类型属性，是对应值的拷贝，而 ES6 模块输出的是值的引用
+- commonJS模块输出的对象上的基本类型属性，是对应值的拷贝，而 ES6 模块输出的是值的引用
 commonjs方式
 
 ```
