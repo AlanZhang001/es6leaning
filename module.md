@@ -119,6 +119,7 @@ function foo() {
   console.log('foo');
 }
 export default foo;
+// 对应的应用方式是 import foo from xxx.js
 
 // 报错
 export 42;
