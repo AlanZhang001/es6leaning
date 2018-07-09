@@ -39,3 +39,24 @@ async function add1(x) {
 add1(10).then(v => {
     console.log(v);
 });
+
+//----------------------------------------------------------------
+// function p(v) {
+//     if (v % 2 === 0) {
+//         return Promise.resolve(v * 5);
+//     }
+//     return Promise.reject(v);
+// }
+
+// p(2).then(v => {
+//     if (v > 5) {
+//         return p(4).then(r => {
+//             console.log('then1 ' + r);
+//             return p(2);
+//         });
+//     }
+// }).then(v => {
+//     console.log('then2:' + v);
+// }).catch(e => {
+//     console.log(e);
+// });
