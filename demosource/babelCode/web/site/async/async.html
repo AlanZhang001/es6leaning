@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>async</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    </head>
+    <body>
+        <pre>
+        <code>
+        // async方法返回的是一个Promise
+        async function Hello(){
+            // 返回值做为该Promise resolve的值
+            // return 'hello async';
+            // 如果async方法有抛出异常，则异常作为reject的值
+            throw Error('hello catch');
+        }
+
+        Hello().then(v => {
+            console.log(v);
+        }).catch(e=>{
+            console.log(e);
+        });
+        </code>
+        <br/>
+        <code>
+        function resolveAfter2Seconds(x) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve(x * 2);
+                }, 2000);
+            });
+        }
+
+        async function add1(x) {
+            var a = await resolveAfter2Seconds(x);
+            return a;
+        }
+
+        add1(10).then(v => {
+            console.log(v);
+        });
+        </code>
+        </pre>
+    </body>
+    <script type="module" src="/scripts/source/async/indexMain.js"></script>
+</html>
