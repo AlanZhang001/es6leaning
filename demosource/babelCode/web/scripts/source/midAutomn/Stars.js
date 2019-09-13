@@ -10,10 +10,10 @@ class Star{
      * @param  {[type]} amount [需要产生的星星的]
      * @return {[type]}        [description]
      */
-    constructor(ctx,height,width,amount) {
+    constructor(ctx,width,height,amount) {
         this.ctx = ctx;
         this.height = height;
-        this.width= height;
+        this.width = width;
         this.stars = this.generateStars(amount);
     }
 

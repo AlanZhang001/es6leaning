@@ -42,16 +42,16 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(3);
 
 
-/***/ },
+/***/ }),
 /* 1 */,
 /* 2 */,
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -102,7 +102,7 @@
 	        var _this = this;
 	
 	        //x位置偏移，以免经过月亮
-	        var x = Math.random() * this.size.width + 800;
+	        var x = Math.random() * this.size.width + 400;
 	        this.meteors.push(new _Meteor2.default(this.ctx, x, this.size.height));
 	
 	        //每隔随机时间，生成新流星
@@ -135,9 +135,9 @@
 	
 	FESTIVAL.initial(document.getElementById('canvas'));
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 	
@@ -161,12 +161,12 @@
 	     * @param  {[type]} amount [需要产生的星星的]
 	     * @return {[type]}        [description]
 	     */
-	    function Star(ctx, height, width, amount) {
+	    function Star(ctx, width, height, amount) {
 	        _classCallCheck(this, Star);
 	
 	        this.ctx = ctx;
 	        this.height = height;
-	        this.width = height;
+	        this.width = width;
 	        this.stars = this.generateStars(amount);
 	    }
 	
@@ -231,9 +231,9 @@
 	
 	exports.default = Star;
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 	
@@ -278,7 +278,7 @@
 	            var gradient = ctx.createRadialGradient(startCircule.x, startCircule.y, startCircule.r, stopCircule.x, stopCircule.y, stopCircule.r);
 	
 	            //径向渐变,为开始圆和结束圆之间添加颜色渐变
-	            gradient.addColorStop(0, 'rgb(255,255,255)');
+	            gradient.addColorStop(0, 'rgb(254, 251, 207)');
 	            gradient.addColorStop(0.01, 'rgb(70,70,80)');
 	            gradient.addColorStop(0.2, 'rgb(40,40,50)');
 	            gradient.addColorStop(0.4, 'rgb(20,20,30)');
@@ -299,9 +299,9 @@
 	
 	exports.default = Moon;
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 	
@@ -376,6 +376,6 @@
 	
 	exports.default = Metor;
 
-/***/ }
+/***/ })
 /******/ ]);
 //# sourceMappingURL=indexMain.js.map

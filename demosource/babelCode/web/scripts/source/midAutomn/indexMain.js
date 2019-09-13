@@ -34,7 +34,7 @@ var FESTIVAL = {
     //流星生成函数
     meteorGenerator : function(){
         //x位置偏移，以免经过月亮
-        let x = Math.random() * this.size.width + 800;
+        let x = Math.random() * this.size.width + 400;
         this.meteors.push(new Meteor(this.ctx, x, this.size.height));
 
         //每隔随机时间，生成新流星

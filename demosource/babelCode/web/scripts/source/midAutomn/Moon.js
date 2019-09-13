@@ -29,7 +29,7 @@ class Moon{
             stopCircule.x, stopCircule.y, stopCircule.r);
 
         //径向渐变,为开始圆和结束圆之间添加颜色渐变
-        gradient.addColorStop(0, 'rgb(255,255,255)');
+        gradient.addColorStop(0, 'rgb(254, 251, 207)');
         gradient.addColorStop(0.01, 'rgb(70,70,80)');
         gradient.addColorStop(0.2, 'rgb(40,40,50)');
         gradient.addColorStop(0.4, 'rgb(20,20,30)');
